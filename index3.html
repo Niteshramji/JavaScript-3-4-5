@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorial Calculation</title>
+</head>
+<body>
+
+<script>
+  // Initialize variables
+  var number = 3; // Factorial of 5
+  var factorial = 1;
+  var i = 1;
+
+  // Calculate factorial using a while loop
+  while (i <= number) {
+    factorial *= i;
+    i++;
+  }
+
+  // Display the result
+  document.write("<h2>Factorial of " + number + ":</h2>");
+  document.write(number + "! = " + factorial);
+</script>
+
+</body>
+</html>

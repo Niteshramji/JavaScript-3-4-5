@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table</title>
+</head>
+<body>
+
+<script>
+  // Prompt user for a number
+  var number = prompt("Enter a number:");
+
+  // Convert the input to a number
+  var inputNumber = parseInt(number);
+
+  // Display the multiplication table for the entered number up to 10
+  document.write("<h2>Multiplication Table " + inputNumber + ":</h2>");
+  for (var i = 1; i <= 10; i++) {
+    var result = inputNumber * i;
+    document.write(inputNumber + " * " + i + " = " + result + "<br>");
+  }
+</script>
+
+</body>
+</html>

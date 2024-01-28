@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marksheet</title>
+</head>
+<body>
+
+<script>
+  // Prompt user for marks input
+  var marks = prompt("Enter your marks:");
+
+  // Convert the input to a number
+  var marksValue = parseFloat(marks);
+
+  // Check the grade based on the marks
+  if (marksValue >= 90) {
+    alert("Grade: A+");
+  } else if (marksValue >= 80) {
+    alert("Grade: A");
+  } else if (marksValue >= 70) {
+    alert("Grade: B");
+  } else if (marksValue >= 60) {
+    alert("Grade: C");
+  } else if (marksValue >= 50) {
+    alert("Grade: D");
+  } else {
+    alert("Grade: F");
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Number Program</title>
+</head>
+<body>
+
+<script>
+  // Define the isPrime function
+  function isPrime(number) {
+    if (number <= 1) {
+      return false;
+    }
+    for (var i = 2; i <= Math.sqrt(number); i++) {
+      if (number % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  // Prompt user for a number
+  var userNumber = prompt("Enter a positive integer:");
+
+  // Convert the input to a number
+  var numberToCheck = parseInt(userNumber);
+
+  // Call the isPrime function and display the result
+  var isPrimeResult = isPrime(numberToCheck);
+  if (isPrimeResult) {
+    alert(numberToCheck + " is a prime number!");
+  } else {
+    alert(numberToCheck + " is not a prime number.");
+  }
+</script>
+
+</body>
+</html>
